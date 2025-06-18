@@ -1,6 +1,6 @@
 let isGenerated = false;
 let buttonln = document.getElementById("println");
-// let resume = document.getElementById("resume-builder");
+let resume = document.getElementById("resume-builder");
 
 function hide() {
     const form = document.getElementById('inputField');
@@ -56,12 +56,13 @@ function hide() {
         isGenerated = true;
 
         buttonln.classList.remove("print");
-        // resume.classList.add("print");
+        resume.classList.add("print");
         
 
     } else {
         form.style.display = 'block';
         isGenerated = false;
+        resume.classList.remove("print");
     }
 }
 
